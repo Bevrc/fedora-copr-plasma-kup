@@ -86,5 +86,5 @@ make %{?_smp_mflags} check ||:
 
 
 %changelog
-* Wed Mar 06 2024 - 0.33.3-1
+* Sun Jun 09 2024 - 0.33.3-1
 - version 0.33.3
