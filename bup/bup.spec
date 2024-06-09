@@ -1,15 +1,15 @@
-%global git_rev   a2584f274aaae6f1428193763eed64282619fe08
-%global git_date  20240120
+%global git_rev   9bc6a07b4a354297a414284ff8d3b510ff9a6e51
+%global git_date  20240121
 %global git_short %(c=%{git_rev}; echo ${c:0:7})
 
 Name:           bup
 Version:        0.34
-Release:        1.%{git_date}git%{git_short}%{?dist}
+Release:        2.%{git_date}git%{git_short}%{?dist}
 Summary:        Very efficient backup system based on the git packfile format
 
 License:        GPLv2
 URL:            https://github.com/%{name}/%{name}
-Source0:        https://github.com/%{name}/%{name}/archive//%{git_rev}/%{name}-%{version}-%{git_short}.tar.gz
+Source0:        https://github.com/%{name}/%{name}/archive/%{git_rev}/%{name}-%{version}-%{git_short}.tar.gz
 
 %global git_min_ver 1.5.6
 
@@ -86,5 +86,7 @@ make %{?_smp_mflags} check ||:
 
 
 %changelog
-* Sun Jun 09 2024 - 0.33.3-1
-- version 0.33.3
+* Sun Jun 09 2024 - 0.34-2
+- version 0.34
+* Sun Jun 09 2024 - 0.34-1
+- version 0.34
